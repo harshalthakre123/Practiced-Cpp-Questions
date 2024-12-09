@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     // Declaration
-    int arr[2][3][3];
+    int arr[2][2][2];
     // insertion
     for(int d=0; d<2; ++d)
     {
@@ -27,11 +27,12 @@ int main()
             }
             cout<<"\n";
         }
+        cout<<"\n";
     }
     cout<<"\n";
 
     //updation
-    arr[1][1][1]=99; 
+    arr[0][1][1]=55; 
 // abstraction
     for(int d=0; d<2; ++d)
     {
@@ -41,6 +42,9 @@ int main()
             {
                 cout<<arr[d][r][c];
             }
+            cout<<"\n";
         }
+        cout<<"\n";
     }
+    
 }
