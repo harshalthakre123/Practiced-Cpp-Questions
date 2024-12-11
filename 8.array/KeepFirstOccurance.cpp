@@ -14,6 +14,9 @@ int main()
                 arr[j]=-1;
             }
         }
+    }
+    for(int i=0; i<5; ++i)
+    {
         if(arr[i]!=-1)
         {
             cout<<arr[i];

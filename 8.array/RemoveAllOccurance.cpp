@@ -2,26 +2,20 @@
 using namespace std;
 int main()
 {
-    int n=5, arr[n]={1, 2, 1, 2, 3};
-    
-    // Method-1;
-    for(int i=0; i<n; ++i)
+    int arr[]={1, 2, 1, 2, 3};
+    int j=0;
+    for(int i=0 ; i<5; ++i)
     {
-        // int count=0;
-        for(int j=i+1; j<n; ++j)
+        if(arr[i]!=2)
         {
-            if(arr[i]==arr[j])
-            {
-                arr[i]=-1;
-                arr[j]=-1;
-            }
+            arr[j]=arr[i];
+            j++;
         }
-        if(arr[i]!=-1)
-        {
-            cout<<arr[i];
-        }
+    } 
+
+    for(int i=0; i<j; ++i)
+    {
+        cout<<arr[i];
     }
-
-
 
 }
