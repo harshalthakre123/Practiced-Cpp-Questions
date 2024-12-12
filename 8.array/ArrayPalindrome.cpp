@@ -7,33 +7,32 @@ int main()
 
     // //Method 1;---------------------------------------------------------------------------------------
 
-    // int array[n];
-    // // array[]=arr[];
+    int array[n];
 
     
-    // for(int i=0; i<n; ++i)
-    // {
-    //     array[i]=arr[i];
-    // }
+    for(int i=0; i<n; ++i)
+    {
+        array[i]=arr[i];
+    }
 
 
-    // for(int i=0; i<n/2; ++i)
-    // {
-    //     int temp= arr[n-i-1];
-    //     arr[n-i-1]=arr[i];
-    //     arr[i]=temp;
-    // }
+    for(int i=0; i<n/2; ++i)
+    {
+        int temp= arr[n-i-1];
+        arr[n-i-1]=arr[i];
+        arr[i]=temp;
+    }
 
 
-    // for(int i=0; i<n; ++i)
-    // {
-    //     if(array[i]!=arr[i])
-    //     {
-    //         cout<<"Array is not Palindrome.";
-    //         return 0;
-    //     }
-    // }
-    // cout<<"Array is Palindrome.";
+    for(int i=0; i<n; ++i)
+    {
+        if(array[i]!=arr[i])
+        {
+            cout<<"Array is not Palindrome.";
+            return 0;
+        }
+    }
+    cout<<"Array is Palindrome.";
 
 
 
@@ -78,14 +77,14 @@ int main()
 
     // //Method-4;
 
-    for(int i=0; i<=n/2; ++i)
-    {
-        if(arr[i]!=arr[n-i-1])
-        {
-            cout<<"Not a Palindrome.";
-            return 0;
-        }
-    }
-    cout<<"Palindrome";
+    // for(int i=0; i<=n/2; ++i)
+    // {
+    //     if(arr[i]!=arr[n-i-1])
+    //     {
+    //         cout<<"Not a Palindrome.";
+    //         return 0;
+    //     }
+    // }
+    // cout<<"Palindrome";
 
 }
