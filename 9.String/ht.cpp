@@ -8,11 +8,11 @@ void casechange(string &name)
     int n=name.length();
     for(int i=0; i<n; ++i)
     {
-        if(name[i]>=97)
+        if(name[i]>=97 && name[i]<=122)
         {
             name[i]-=32;
         }
-        else if(name[i]>=65)
+        else if(name[i]>=65  && name[i]<=90)
         {
             name[i]+=32;
         }
@@ -24,10 +24,13 @@ void casechange(string &name)
 }
 
 
+
+
 int main()
 {
-    // int diff=int('a')-int('A'); //97-65=32
-    string name="";
+    // int diff=int('Z'); //97-65=32
+    // cout<<diff;
+    string name;
     cout<<"Enter any String: ";
     cin>>name;
     casechange(name);
