@@ -8,11 +8,11 @@ int Balance(string &a)
     int cb=0, p=0, sqb=0;
     for(int i=0; i<n; ++i)
     {
-        if(a[i]=='}')
+        if(a[i]=='{')
         {
             cb++;
         }
-        else if(a[i]=='{')
+        else if(a[i]=='}' && cb>0)
         {
             cb--;
         }
@@ -20,7 +20,7 @@ int Balance(string &a)
         {
             p++;
         }
-        else if(a[i]==')')
+        else if(a[i]==')' && p>0)
         {
             p--;
         }
@@ -28,15 +28,11 @@ int Balance(string &a)
         {
             sqb++;
         }
-        else if(a[i]==']')
+        else if(a[i]==']' && sqb>0)
         {
             sqb--;
         }
-        else
-        {
-            cout<<"Unknown Paranthesis (other character found)";
-            return 0;
-        }
+        
     }
 
     if(cb==0 && p==0 && sqb==0)
@@ -48,11 +44,9 @@ int Balance(string &a)
     }
 }
 
-
-
 int main()
 {
-    string a="{[({)]}}";
+    string a="[({)]}}";
     Balance(a);
 
 }
