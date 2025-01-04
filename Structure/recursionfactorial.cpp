@@ -1,4 +1,4 @@
-// Sum of n natural numbers.
+// Factorial of a No. Factorial .
 #include<iostream>
 using namespace std;
 int summ(int num)
@@ -7,7 +7,7 @@ int summ(int num)
     {
         return num;        
     }
-return num+summ(num-1);
+return num*summ(num-1);
 }
 
 int main()
