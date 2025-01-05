@@ -1,4 +1,4 @@
-//Sum of array
+//Sum of 10 natural nums
 
 #include<iostream>
 using namespace std;
@@ -13,5 +13,6 @@ int summ(int num){
 }
 int main()
 {
+    // calling summ function for the sum of 10 natural numbers
     cout<<summ(10);
 }
