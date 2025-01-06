@@ -13,6 +13,6 @@ int summ(int num){
 }
 int main()
 {
-    // calling summ function for the sum of 10 natural numbers
+    // calling summ function for the sum of 10 natural numbers 1 to 10
     cout<<summ(10);
 }
