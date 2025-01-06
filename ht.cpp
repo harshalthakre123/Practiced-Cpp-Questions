@@ -1,4 +1,4 @@
-//Sum of 10 natural nums
+//Sum of 10 natural nums (12345678910)
 
 #include<iostream>
 using namespace std;
