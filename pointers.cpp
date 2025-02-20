@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void geeks()
+void pointing()
 {
     int var = 20;
     int* ptr;
@@ -12,6 +12,6 @@ void geeks()
 }
 int main() 
 { 
-  geeks(); 
+  pointing(); 
   return 0;
 }
